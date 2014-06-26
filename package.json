@@ -1,6 +1,6 @@
 {
   "name": "hapi-single-page-app-plugin",
-  "description": "Hapi plugin to make it easy to serve static files for a single page app + json request",
+  "description": "Hapi plugin to make it easy to serve static files for a single page app + json requests",
   "version": "0.0.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {

@@ -1,4 +1,5 @@
 hapi-single-page-app-plugin
 ===========================
 
-Easily serve static files for a single page app + json request
+Hapi plugin to make it easy to serve static files for a single page app
++ json requests
