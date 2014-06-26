@@ -13,7 +13,7 @@
     "plugin"
   ],
   "license": "MIT",
-  "main": "index.coffee",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/KyleAMathews/hapi-single-page-app-plugin.git"
