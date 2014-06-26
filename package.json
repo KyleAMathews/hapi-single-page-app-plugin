@@ -19,7 +19,7 @@
     "url": "https://github.com/KyleAMathews/hapi-single-page-app-plugin.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"no test specified\"",
     "prepublish": "./node_modules/.bin/coffee -b -o lib/ -c src/"
   },
   "devDependencies": {
