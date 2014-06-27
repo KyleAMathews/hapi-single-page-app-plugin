@@ -19,6 +19,10 @@ exports.register = (plugin, options, next) ->
     # Matches a path we're excluding, pass on.
     if (options.exclude.some (path) -> new RegExp(path).test(request.path))
       next()
+    # Accept: */* generally means they're looking for a JS file.
+    else if negotiator.mediaType() is "*/*"
+      request.setUrl("/public#{request.path}")
+      next()
     # If they're expecting json, pass on the request unmodified as there should
     # be a route ready to handle this.
     else if negotiator.preferredMediaType(availableMediaTypes) is "application/json"
