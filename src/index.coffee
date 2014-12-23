@@ -42,4 +42,4 @@ exports.register = (plugin, options, next) ->
   next()
 
 exports.register.attributes =
-  pkg: require './package.json'
+  pkg: require '../package.json'
