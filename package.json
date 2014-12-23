@@ -20,7 +20,7 @@
   },
   "scripts": {
     "test": "echo \"no test specified\"",
-    "prepublish": "./node_modules/.bin/coffee -b -o lib/ -c src/"
+    "prepublish": "./node_modules/.bin/coffee -b -o dist/ -c src/"
   },
   "devDependencies": {
     "coffee-script": "^1.7.1"
