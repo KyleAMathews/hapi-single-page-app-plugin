@@ -1,14 +1,19 @@
 Negotiator = require('negotiator')
+objectAssign = require 'object-assign'
 
-exports.register = (plugin, options, next) ->
-  unless options.exclude? then options.exclude = []
+exports.register = (plugin, options={}, next) ->
+  defaults =
+    exclude: []
+    staticPath: './public'
+
+  options = objectAssign defaults, options
 
   plugin.route
     method: 'GET',
     path: '/public/{path*}',
     handler:
       directory:
-        path: "./public"
+        path: options.staticPath
         listing: false
         index: true
 
